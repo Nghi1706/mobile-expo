@@ -12,7 +12,7 @@ import {
 type ButtonType = 'primary' | 'secondary';
 
 interface GradientButtonProps {
-    text: string;
+    text: string | React.ReactNode;
     icon?: React.ReactNode;
     type?: ButtonType;
     onPress?: () => void;

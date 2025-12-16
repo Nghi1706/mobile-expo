@@ -2,8 +2,8 @@ import { Image } from 'expo-image';
 import { StyleSheet } from 'react-native';
 
 import GradientButton from '@/components/button';
+import GradientText from '@/components/gradient-text';
 import ParallaxScrollView from '@/components/parallax-scroll-view';
-import { ThemedView } from '@/components/themed-view';
 
 export default function HomeScreen() {
   return (
@@ -15,18 +15,35 @@ export default function HomeScreen() {
           style={styles.reactLogo}
         />
       }>
-      <ThemedView style={styles.titleContainer}>
-        <GradientButton
-          text="Primary Button"
-          onPress={() => { }}
-        />
 
-        <GradientButton
-          text="Secondary Button"
-          type="secondary"
-          onPress={() => { }}
-        />
-      </ThemedView>
+      <GradientText
+        text="Gradient Text"
+        style={{
+          fontSize: 28,
+          fontWeight: '700',
+        }}
+      />
+      <GradientButton
+        text="Primary Button"
+        onPress={() => { }}
+      />
+
+      <GradientButton
+        text="Secondary Button"
+        type="secondary"
+        onPress={() => { }}
+      />
+
+      <GradientButton
+        text={
+          <GradientText
+            text="Primary"
+            style={{ fontSize: 24, fontWeight: '600' }}
+          />
+        }
+        type="secondary"
+        onPress={() => { }}
+      />
 
     </ParallaxScrollView>
   );
