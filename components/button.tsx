@@ -34,7 +34,7 @@ export default function GradientButton({
                 colors={GRADIENT_COLORS}
                 locations={GRADIENT_LOCATIONS}
                 start={{ x: 0, y: 0 }}
-                end={{ x: 1, y: 0 }}
+                end={{ x: 1, y: 1 }}
                 style={[styles.border, style]}
             >
                 <Pressable style={styles.secondaryInner} onPress={onPress}>
@@ -54,7 +54,7 @@ export default function GradientButton({
                 colors={GRADIENT_COLORS}
                 locations={GRADIENT_LOCATIONS}
                 start={{ x: 0, y: 0 }}
-                end={{ x: 1, y: 0 }}
+                end={{ x: 1, y: 1 }}
                 style={[styles.primary, style]}
             >
                 <View style={styles.content}>
