@@ -45,6 +45,13 @@ export default function HomeScreen() {
         onPress={() => { }}
       />
 
+      <GradientButton
+        text="Animation Button"
+        type="secondary"
+        isAnimate={true}
+        onPress={() => { }}
+      />
+
     </ParallaxScrollView>
   );
 }
